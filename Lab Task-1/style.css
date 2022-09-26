@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-sizing: border-box;
+  }
+
+  body 
+  {
+    background-color: rgb(212, 242, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container 
+  {
+    position: relative;
+    width: 79%;
+    max-width: 100%;
+    min-height: 800px;
+    margin: 50px;
+    background-color: rgb(234, 248, 248);
+    display: grid;
+    grid-template-columns: 300px 700px;
+    box-shadow: 0 35px 55px rgb(91, 246, 246);
+  }
+
+  .container .left 
+  {
+    position: relative;
+    padding: 40px;
+    background-color: rgb(7, 158, 158);
+    color: aliceblue;
+  }
+
+  .profile 
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(248, 249, 249);
+  }
+
+  .profile .image 
+  {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+  }
+
+  .profile .image img 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile h2 
+  {
+    font-size: 20px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .profile h2 span 
+  {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .contact 
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .contact h3 
+  {
+    font-size: 16px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 15px;
+  }
+
+  .contact ul 
+  {
+    position: relative;
+    line-height: 15px;
+  }
+
+  .contact ul li 
+  {
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .contact ul li span 
+  {
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  .contact ul li .icon 
+  {
+    display: inline-block;
+    width: 10%;
+    font-size: 18px;
+    color: rgb(2, 58, 58);
+  }
+
+  .edu 
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .edu h3 
+  {
+    font-size: 16px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 15px;
+  }
+
+  .edu ul 
+  {
+    position: relative;
+    line-height: 20px;
+  }
+
+  .edu ul li 
+  {
+    position: relative;
+    margin: 10px 0;
+    cursor: default;
+    list-style-type: disc;
+    color: rgb(2, 58, 58);
+  }
+
+  .edu ul li h5 
+  {
+    color: rgb(2, 58, 58);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .edu ul li h4:nth-child(2) 
+  {
+    font-size: 13px;
+    font-weight: 500;
+    color: aliceblue;
+  }
+
+  .edu ul li h4 
+  {
+    font-size: 13px;
+    font-weight: 300;
+    color: aliceblue;
+  }
+
+  .language h3 
+  {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 15px;
+  }
+
+  .language .percent 
+  {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(242, 252, 252);
+    display: block;
+    margin-top: 5px;
+  }
+
+  .language .percent div 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background-color: rgb(37, 226, 226);
+  }
+
+  .language ul li 
+  {
+    position: relative;
+    margin: 10px 0;
+    cursor: default;
+    list-style-type: disc;
+    color: rgb(2, 58, 58);
+  }
+
+  .language .text 
+  {
+    color: rgb(2, 58, 58);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .container .right 
+  {
+    position: relative;
+    padding: 40px;
+    background-color: rgb(248, 249, 249);
+  }
+
+  .box 
+  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-bottom: 10px;
+  }
+
+  .box h2 
+  {
+    color: rgb(7, 158, 158);
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .box p 
+  {
+    font-size: 16px;
+    margin-top: 3px;
+    text-align: justify;
+    font-weight: 300;
+  }
+
+  .exp h2 
+  {
+    color: rgb(7, 158, 158);
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .exp .box 
+  {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .exp .box .year 
+  {
+    min-width: 25%;
+  }
+
+  .exp .box .year h5 
+  {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(2, 58, 58);
+  }
+
+  .exp .box .text h4 
+  {
+    text-transform: uppercase;
+    font-size: 16x;
+    color: rgb(2, 58, 58);
+    font-weight: 600;
+    padding-left: 30px;
+  }
+
+  .exp p 
+  {
+    font-size: 16px;
+    margin-top: 3px;
+    text-align: justify;
+    font-weight: 300;
+    padding-left: 30px;
+  }
+
+  .skill 
+  {
+    position: relative;
+    align-items: left;
+  }
+
+  .skill h3 
+  {
+    color: rgb(7, 158, 158);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .skill .box 
+  {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .skill .box .text 
+  {
+    min-width: 25%;
+  }
+
+  .skill .box .text ul li 
+  {
+    list-style: none;
+  }
+
+  .skill .box .list ul li 
+  {
+    list-style: none;
+  }
+
+  .skill .box .text ul li .txt 
+  {
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgb(2, 58, 58);
+  }
+
+  .skill .box .list ul li .lst 
+  {
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 500;
+    line-height: 25px;
+    padding-left: 50px;
+  }
+
+  .award 
+  {
+    position: relative;
+    align-items: left;
+  }
+
+  .award h2 
+  {
+    color: rgb(7, 158, 158);
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .award .box 
+  {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .award .box .year 
+  {
+    min-width: 25%;
+  }
+
+  .award .box .year h5 
+  {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(2, 58, 58);
+    line-height: 35px;
+  }
+
+  .award p 
+  {
+    font-size: 16px;
+    margin-top: 3px;
+    text-align: justify;
+    font-weight: 300;
+    padding-left: 30px;
+    line-height: 20px;
+  }
+
+  .personal 
+  {
+    position: relative;
+    align-items: left;
+  }
+
+  .personal h2 
+  {
+    color: rgb(7, 158, 158);
+    font-size: 18px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .personal .finalbox 
+  {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+  }
+
+  .personal .finalbox .skill 
+  {
+    min-width: 25%;
+  }
+
+  .personal .finalbox .skill h3 
+  {
+    font-size: 14px;
+    margin-top: 2px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgb(2, 58, 58);
+  }
+
+  .personal .finalbox .skill 
+  {
+    position: relative;
+    margin: 10px 0px;
+    cursor: default;
+    line-height: 26px;
+    list-style-type: none;
+    color: rgb(2, 58, 58);
+  }
+
+  .personal .finalbox .text 
+  {
+    color: black;
+    font-weight: 500;
+    padding-left: 30px;
+  }
